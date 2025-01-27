@@ -1,0 +1,44 @@
+PSUDEO CODE 'CODE DB'
+
+MAIN SCREEN (Search Window, Add a query)
+
+
+	Displaying filter options ; language(drop down menu) , description(you can choose between 1 and 5 key words to search in no particular order) , code(any key phrases in the code)
+
+	it will then search the db and return any lines matching the filtered parameters  
+
+
+
+
+	There should also be an option to 'add new code' and this will take you to the LOGIN PAGE. 
+	
+
+
+
+
+LOGIN PAGE (login,create an account) 
+
+		
+
+	Window displaying a username and password section, inputs should be compared to the DB. If failed it will kick them out. If successful they will be able to add a query. 
+	When creating an account they will input a username and password, this will be sent to the db for verification, once it has been verified in the DB it will be able to use.
+
+
+	
+
+CHANGES PAGE
+
+	this will display the following input boxes:
+
+		A drop down list of the language
+		A description of what the code does
+		The code itself 
+
+
+	an option for it to be submitted and written to the db.
+		are you sure verification
+	an option to logout and return to the home page
+
+
+
+	If the master user is logged in it will also give an option to approve a new user and display a list on unverified users in the db. 
