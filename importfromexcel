@@ -1,0 +1,21 @@
+import sqlite3
+import pandas as pd
+
+DB_FILE = "commands.db"
+CSV_FILE = "commands.csv"  # Update this with your CSV/Excel file name
+
+def import_from_csv():
+    df = pd.read_csv(CSV_FILE)  # Use pd.read_excel() for Excel files
+
+    conn = sqlite3.connect(DB_FILE)
+    cursor = conn.cursor()
+
+    for _, row in df.iterrows():
+        cursor.execute("INSERT INTO commands (language, command, description) VALUES (?, ?, ?)", 
+                       (row["Language"], row["Command"], row["Description"]))
+    
+    conn.commit()
+    conn.close()
+    print(f"✅ {len(df)} commands imported!")
+
+import_from_csv()
