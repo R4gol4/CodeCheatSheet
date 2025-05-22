@@ -1,0 +1,7 @@
+WINDOWS REMOTE POWERSHELL 
+
+
+Enable-PSRemoting -Force
+Set-Item WSMan:\localhost\Client\TrustedHosts -Value " ## INSERT SERVER NAME ## " -Force
+Restart-Service WinRM
+Test-WSMan -ComputerName ## INSERT SERVER NAME ##
