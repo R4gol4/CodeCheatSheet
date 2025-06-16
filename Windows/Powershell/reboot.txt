@@ -1,0 +1,7 @@
+Scheduled reboot for 1AM tomorrow 
+
+
+$tomorrow = (Get-Date).AddDays(1).ToString("dd/MM/yyyy")
+$time = "01:00"
+schtasks /Create /TN "ScheduledReboot" /TR "shutdown /r /f /t 0" /SC ONCE /ST $time /SD $tomorrow /RU SYSTEM /F
+schtasks /Query /TN "ScheduledReboot" /V /FO LIST
