@@ -1,4 +1,0 @@
-Fix error handling when adding and editing the db 
-create a script and file that will add entries to the db on mass from an excel document 
-refine the search features (multiple key words / phrases)
-must be able to run as a desktop app rather than from cmd
