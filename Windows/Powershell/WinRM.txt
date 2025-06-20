@@ -8,5 +8,5 @@ Test-WSMan -ComputerName ## INSERT SERVER NAME ##
 
 
 
-Enter-PSSession -Computer ##COMPUTERNAME## -Credentail ##USERNAME##
+Enter-PSSession -Computer ##COMPUTERNAME## -Credential ##USERNAME##
 Restart-Service -Name "ServiceName"
